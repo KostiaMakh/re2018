@@ -1,0 +1,125 @@
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+.main_screen {
+  background-color: black;
+  height: 100vh;
+}
+.main_screen header .container .bg-light {
+  background-color: transparent !important;
+}
+.main_screen header .navbar-toggler-icon {
+  color: white !important;
+}
+.main_screen header .navbar-nav {
+  z-index: 2 !important;
+}
+.main_screen header .navbar-nav .nav-item {
+  margin-right: 70px;
+}
+.main_screen header .navbar-nav .nav-item:before {
+  content: "";
+  display: block;
+  height: 2px;
+}
+.main_screen header .navbar-nav .nav-item:hover:before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  top: 22px;
+}
+.main_screen header .navbar-nav .nav-item a {
+  color: white !important;
+}
+.main_screen .first_page {
+  position: relative;
+  z-index: 2 !important;
+}
+.main_screen .first_page .container {
+  padding-top: 97px;
+}
+.main_screen .first_page .container .row {
+  margin-bottom: 120px;
+}
+.main_screen .first_page .container .row .item {
+  color: white;
+}
+.main_screen .first_page .container .row .item h2 {
+  display: block;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.main_screen .first_page .container .row .item span {
+  display: block;
+  font-size: 35px;
+  line-height: 41px;
+  margin-bottom: 54px;
+}
+.main_screen .first_page .container .row .item a {
+  font-size: 18px;
+  border: white 3px solid;
+  display: block;
+  padding: 15px;
+  margin: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.main_screen .first_page .container .partners {
+  color: white;
+}
+.main_screen .first_page .container .partners .partner {
+  text-align: center;
+}
+.main_screen .first_page .container .partners .partner h3 {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+.main_screen .video_bg {
+  padding: 100px;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  z-index: 1 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.remarketing {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+.remarketing .second_page {
+  position: relative;
+  z-index: 2 !important;
+}
+.remarketing .second_page .container {
+  padding-top: 97px;
+}
+.remarketing .second_page .container .row {
+  margin-bottom: 80px;
+}
+.remarketing .second_page .container .row h2 {
+  display: block;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.remarketing .second_page .container .row span {
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 32px;
+}
+.remarketing .video_bg {
+  padding: 300px 100px 100px;
+  position: relative;
+  bottom: 100vh;
+  height: 100vh;
+  z-index: 1 !important;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
