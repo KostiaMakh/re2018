@@ -1,0 +1,125 @@
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+
+.main_screen{
+  background-color: black;
+  height: 100vh;
+header{
+  .container{
+    .bg-light{
+      background-color: transparent !important;
+    }
+  }
+  .navbar-toggler-icon{
+    color: white !important;}
+  .navbar-nav{
+    z-index: 2 !important;
+    .nav-item{
+      margin-right: 70px;
+      &:before{
+        content:"";
+        display: block;
+        height: 2px;
+      }
+      &:hover{
+        &:before{
+          content:"";
+          display: block;
+          height: 2px;
+          background-color: white;
+          position: relative;
+          top: 22px;
+          }}
+      a {
+        color: white !important;
+  }}
+}}
+
+.first_page{
+  position: relative;
+  z-index: 2 !important;
+  .container{
+    padding-top: 97px;
+    .row{
+      margin-bottom: 120px;
+      .item{
+        color: white;
+        h2{
+          display: block;
+          font-size: 70px;
+          margin-bottom: 20px;
+        }
+        span{
+          display: block;
+          font-size: 35px;
+          line-height: 41px;
+          margin-bottom: 54px;
+        }
+        a{
+          font-size: 18px;
+          border: white 3px solid;
+          display: block;
+          padding: 15px;
+          margin: auto;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+    .partners{
+      color: white;
+      .partner{
+        text-align: center;
+      h3{
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+}}
+  .video_bg{
+    padding: 100px;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.remarketing{
+  background-color: black;
+  color: white;
+  height: 100vh;
+  .second_page{
+    position: relative;
+    z-index: 2 !important;
+    .container{
+      padding-top: 97px;
+      .row{
+        margin-bottom: 80px;
+        h2{
+          display: block;
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        span{
+          display: block;
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 32px;
+        }
+      }
+    }}
+  .video_bg{
+    padding: 300px 100px 100px;
+    position: relative;
+    bottom: 100vh;
+    height: 100vh;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+  }
+}
