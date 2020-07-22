@@ -59,7 +59,7 @@ header{
       a {
         color: white !important;
   }}
-}}
+}}}
 
 .first_page{
   position: relative;
@@ -105,7 +105,7 @@ header{
     }
   }
 }}
-}
+
 
 .remarketing{
   position: relative;
@@ -268,4 +268,60 @@ button{
       width: 100%;
     }
   }
+}
+.graphic{
+  padding-top: 36px;
+  .time{
+    display: block;
+    span{
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .speakers{
+    position: relative;
+    img{
+      z-index: 2 !important;
+    }
+    &:after{
+      content: "";
+      display: block;
+      background-color: black;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 50%;
+      left: -15%;
+      z-index: 1 !important;
+    }
+    @media screen and (max-width: 900px){
+        padding-top: 40px;
+      span{
+        font-size: 40px;
+      }
+      &:after{
+        display: none;
+      }
+      border-left: black 2px solid;
+      .speaker{
+        z-index: 1;
+        position: relative;
+        img{
+          width: 100%;
+          display: block;
+          margin-bottom: 30px;
+        }
+        &:before{
+          content: "";
+          display: block;
+          background-color: black;
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          z-index: 0;
+        }
+      }
+    }}
 }

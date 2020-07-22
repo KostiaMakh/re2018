@@ -62,31 +62,32 @@
 .main_screen header .navbar-nav .nav-item a {
   color: white !important;
 }
-.main_screen .first_page {
+
+.first_page {
   position: relative;
   z-index: 2 !important;
 }
-.main_screen .first_page .container {
+.first_page .container {
   padding-top: 97px;
 }
-.main_screen .first_page .container .row {
+.first_page .container .row {
   margin-bottom: 120px;
 }
-.main_screen .first_page .container .row .item {
+.first_page .container .row .item {
   color: white;
 }
-.main_screen .first_page .container .row .item h2 {
+.first_page .container .row .item h2 {
   display: block;
   font-size: 70px;
   margin-bottom: 20px;
 }
-.main_screen .first_page .container .row .item span {
+.first_page .container .row .item span {
   display: block;
   font-size: 35px;
   line-height: 41px;
   margin-bottom: 54px;
 }
-.main_screen .first_page .container .row .item a {
+.first_page .container .row .item a {
   font-size: 18px;
   border: white 3px solid;
   display: block;
@@ -96,14 +97,14 @@
   text-transform: uppercase;
   color: white;
 }
-.main_screen .first_page .container .partners {
+.first_page .container .partners {
   color: white;
 }
-.main_screen .first_page .container .partners .partner {
+.first_page .container .partners .partner {
   text-align: center;
   margin-bottom: 35px;
 }
-.main_screen .first_page .container .partners .partner h3 {
+.first_page .container .partners .partner h3 {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
 }
@@ -280,6 +281,66 @@
 }
 .program .plane img {
   width: 100%;
+}
+
+.graphic {
+  padding-top: 36px;
+}
+.graphic .time {
+  display: block;
+}
+.graphic .time span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.graphic .speakers {
+  position: relative;
+}
+.graphic .speakers img {
+  z-index: 2 !important;
+}
+.graphic .speakers:after {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  left: -15%;
+  z-index: 1 !important;
+}
+@media screen and (max-width: 900px) {
+  .graphic .speakers {
+    padding-top: 40px;
+    border-left: black 2px solid;
+  }
+  .graphic .speakers span {
+    font-size: 40px;
+  }
+  .graphic .speakers:after {
+    display: none;
+  }
+  .graphic .speakers .speaker {
+    z-index: 1;
+    position: relative;
+  }
+  .graphic .speakers .speaker img {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .graphic .speakers .speaker:before {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
