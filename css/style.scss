@@ -4,8 +4,9 @@
 
 .video_bg{
   position: absolute;
+  height: 80vh;
   top: 100px;
-  padding: 100px;
+  padding: 100px 100px 100px;
   z-index: 1 !important;
   @media screen and (max-width: 720px){
     display: none;}
@@ -14,7 +15,7 @@
     justify-content: center;
     opacity: 50%;
     .video{
-      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
     }
@@ -24,8 +25,7 @@
 .main_screen{
   background-color: black;
   height: 100vh;
-  overflow: hidden;
-  z-index: 222;
+  z-index: 2;
   position: relative;
 header{
   .container{
@@ -59,15 +59,29 @@ header{
       a {
         color: white !important;
   }}
-}}}
+}}
 
 .first_page{
   position: relative;
   z-index: 2 !important;
+  .partner_cont{
+    .partners{
+      color: white;
+      .partner{
+        text-align: center;
+        margin-bottom: 35px;
+        h3{
+          color: white;
+          display: block;
+          margin-bottom: 30px;
+          font-size: 16px;
+          font-family: 'Oswald', sans-serif;
+        }
+      }
+    }}
   .container{
-    padding-top: 97px;
+    padding-top: 90px;
     .row{
-      margin-bottom: 120px;
       .item{
         color: white;
         h2{
@@ -93,18 +107,8 @@ header{
         }
       }
     }
-    .partners{
-      color: white;
-      .partner{
-        text-align: center;
-        margin-bottom: 35px;
-      h3{
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
-      }
-    }
-  }
-}}
+
+}}}
 
 
 .remarketing{
@@ -271,57 +275,179 @@ button{
 }
 .graphic{
   padding-top: 36px;
+  .container{
+    .row{
+      margin-bottom: 50px;
+    }
+  }
   .time{
-    display: block;
+    position: relative;
+    bottom: 30%;
     span{
-      font-size: 24px;
-      font-weight: bold;
+      display: none;
+      @media screen and (max-width: 900px){
+          font-size: 40px;
+          font-weight: bold;
+          display: inherit;
+          z-index: 2 !important;
+        }
     }
   }
   .speakers{
     position: relative;
-    img{
-      z-index: 2 !important;
-    }
-    &:after{
-      content: "";
+    span{
+      font-size: 24px;
       display: block;
-      background-color: black;
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      bottom: 50%;
-      left: -15%;
-      z-index: 1 !important;
+      margin-bottom: 22px;
+    }
+    p{
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .group{
+      span{
+        font-size: 24px;
+        display: block;
+        margin-bottom: 12px;
+        line-height: 29px;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 16px;
+        &:last-of-type{
+        margin-bottom: 30px;
+      }}
+    }
+    .speaker_photo{
+      position: relative;
+      &:after{
+        content: "";
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 50%;
+        left: -70%;
+        z-index: -1 !important;}
+      img{
+        z-index: 2 !important;
+        width: 100%;
+        display: block;
+        margin-bottom: 28px;
+      }
     }
     @media screen and (max-width: 900px){
         padding-top: 40px;
-      span{
-        font-size: 40px;
-      }
-      &:after{
-        display: none;
-      }
-      border-left: black 2px solid;
+        border-left: black 2px solid;
+      .speakers_row{
+        .speaker{
+          padding-left: 60px;
+          &:after{
+            content: "";
+            display: block;
+            background-color: #cbd3da;
+            width: 80%;
+            height: 2px;
+            margin-bottom: 30px;
+          }
+          .speaker_photo{
+            &:before{
+              content: "";
+              display: none;
+            }
+            &:after{
+              content: "";
+              display: block;
+              background-color: black;
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              bottom: 50%;
+              left: -60px;
+              z-index: -1 !important;
+            }
+          }}}
+          }}}
+.graphic{
+        .speaker{
+          .group{
+            display: none;}}}
+.graphic{
+  .row{
+    &:first-of-type{
       .speaker{
-        z-index: 1;
-        position: relative;
-        img{
-          width: 100%;
-          display: block;
-          margin-bottom: 30px;
+        &:first-of-type{
+        .speaker_photo{
+          &:before{
+                content: "14:45";
+                font-size: 24px;
+                font-weight: bold;
+                display: block;
+                position: absolute;
+                text-align: center;
+                top: 40%;
+                left: -120%;
+                z-index: 2 !important;
+              }}
+          }
         }
-        &:before{
-          content: "";
+        }
+  &:nth-child(2){
+    .speaker{
+      &:first-of-type{
+        .speaker_photo{
+          &:before{
+            content: "15:30";
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            position: absolute;
+            text-align: center;
+            top: 40%;
+            left: -120%;
+            z-index: 2 !important;
+          }}
+      }
+    }
+  }}}
+.price{
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  .container_bottom{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 2 !important;
+    .row-sum{
+
+      .div{
+        padding: 5px !important;
+      }
+      p{
+        font-size: 14px;
+      }
+      span{
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+  .second_page{
+    position: relative;
+    z-index: 2 !important;
+    .container{
+      padding-top: 97px;
+      .row{
+        margin-bottom: 80px;
+        h2{
           display: block;
-          background-color: black;
-          height: 2px;
-          width: 100%;
-          position: absolute;
-          top: 50%;
-          left: 0;
-          z-index: 0;
+          font-size: 30px;
+          text-transform: uppercase;
         }
       }
-    }}
+    }
+  }
 }
